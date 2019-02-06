@@ -1,0 +1,21 @@
+.tag {
+  border: 1px solid lightgray;
+  border-radius: 15px;
+  min-width: 30px;
+  display: inline-block;
+  padding: 5px $normal-padding;
+  margin-right: 12px;
+  margin-left: 0;
+
+  &.positive {
+    background-color: #00c97e;
+    border-color: #00c97e;
+    color: #fff;
+  }
+
+  &.negative {
+    background-color: #ed4a59;
+    border-color: #ed4a59;
+    color: #fff;
+  }
+}

@@ -1,0 +1,27 @@
+/* here all the base layout's styles*/
+
+html {
+    font-family: MiloWeb, sans-serif;
+    font-size: $font-size;
+    line-height: 1.875rem;
+    font-weight: 200;
+    color: $theme-foreground-font-color;
+    background-color: $theme-background-color;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+main {
+    margin-top: $navbar-height;
+    margin-bottom: 40px;
+}
+
+.content {
+    @extend %content-box;
+}

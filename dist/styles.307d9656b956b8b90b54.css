@@ -1,0 +1,678 @@
+/*here you have to put all the 3rd parts style library*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+the colors for the heart-eye svg
+*/
+.sb-icon--mood__background {
+  fill: #ffd442;
+}
+
+.sb-icon--mood__lines {
+  fill: #594504;
+}
+
+.sb-icon--mood__eyes {
+  fill: #f4606e;
+}
+
+/*here all the font faces*/
+@font-face {
+  font-family: "MiloWeb";
+  src: url("/src/styles/fonts/MiloWeb.woff") format("woff");
+}
+
+@font-face {
+  font-family: "MiloWeb";
+  src: url("/src/styles/fonts/MiloWeb-Medium.woff") format("woff");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "MiloWeb";
+  src: url("/src/styles/fonts/MiloWeb.woff") format("woff");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "MiloWeb";
+  src: url("/src/styles/fonts/MiloWeb-Light.woff") format("woff");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "MiloWeb";
+  src: url("/src/styles/fonts/MiloWeb-Extralight.woff") format("woff");
+  font-weight: 200;
+}
+
+/*here you put all the general styles */
+/*here only variables*/
+/*colors used in the styles*/
+/*font sizes*/
+/*border sizes*/
+/*heights*/
+/*widths*/
+/*paddings*/
+/*here all the style extensions to inherits*/
+nav, .u-table {
+  -webkit-box-shadow: 0 1px 2px rgba(107, 107, 107, 0.15);
+  -moz-box-shadow: 0 1px 2px rgba(107, 107, 107, 0.15);
+  box-shadow: 0 1px 2px rgba(107, 107, 107, 0.15);
+}
+
+.content, nav ul {
+  width: 85%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.u-modal, .u-modal-body {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+/*here the redefinitions of the html basic elements*/
+h1 {
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 200;
+}
+
+h3 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin: 10px 0 5px 0;
+}
+
+h4 {
+  font-size: 1.3rem;
+}
+
+h6 {
+  font-weight: 300;
+  color: gray;
+  font-size: 0.9rem;
+  display: inline-block;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+/*here utility classes*/
+.to-left {
+  float: left;
+  margin-right: 10px;
+}
+
+.to-right {
+  float: right;
+  margin-left: 10px;
+}
+
+.clear-float {
+  clear: both;
+}
+
+.secondary-text {
+  margin-top: 5px;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+/*here all the layout styles*/
+/* here all the base layout's styles*/
+html {
+  font-family: MiloWeb, sans-serif;
+  font-size: 16px;
+  line-height: 1.875rem;
+  font-weight: 200;
+  color: #000;
+  background-color: #ecf1f5;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+main {
+  margin-top: 47px;
+  margin-bottom: 40px;
+}
+
+nav {
+  height: 47px;
+  background-color: #fff;
+  color: #000;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+nav ul {
+  height: 100%;
+}
+
+nav ul li {
+  height: 100%;
+  display: inline-block;
+  margin-right: 14px;
+  line-height: 47px;
+}
+
+nav ul li a {
+  height: 100%;
+  display: block;
+  text-decoration: none;
+  color: #000;
+}
+
+nav ul li a span.icon {
+  display: inline-block;
+  height: 100%;
+  width: 23.5px;
+  vertical-align: middle;
+  padding: 5px 0;
+  box-sizing: border-box;
+}
+
+/*here the style of image grid*/
+.image-grid * {
+  box-sizing: border-box;
+}
+
+.image-grid img {
+  width: 100%;
+}
+
+.image-grid-row {
+  display: -ms-flexbox;
+  /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap;
+  /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.image-grid-column {
+  -ms-flex: 50%;
+  flex: 50%;
+  max-width: 50%;
+  padding: 0 4px;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .image-grid-column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/*here all the advanced element styles*/
+/*here the sections styles*/
+/*a section with the upper border rounded and backgrounded with the primary color*/
+.section-primary {
+  position: relative;
+  z-index: 1;
+  padding: 35px 15px;
+  transform: skewY(2deg);
+  background-color: #00a4cb;
+  border-top-right-radius: 24px;
+  color: white;
+  margin: 48px -15px 0 -15px;
+  /*with a dark color*/
+  /*the rectangle that will colorize the corner*/
+  /*the circle to make the corner effect, This will hide the rectangle*/
+}
+
+.section-primary.dark {
+  background-color: #2a484f;
+}
+
+.section-primary.dark:before {
+  background-color: #2a484f;
+}
+
+.section-primary:before {
+  height: 24px;
+  width: 24px;
+  background-color: #00a4cb;
+  position: absolute;
+  top: -23px;
+  left: 0;
+  content: '';
+  z-index: -2;
+}
+
+.section-primary:after {
+  border-radius: 50%;
+  height: 48px;
+  width: 48px;
+  background-color: white;
+  position: absolute;
+  top: -48px;
+  left: 0;
+  content: '';
+  z-index: -1;
+}
+
+/*this one will correct the positive skew of the primary section*/
+.section-content {
+  transform: skewY(-2deg);
+}
+
+/*this section will be putted over the primary section*/
+.background-section {
+  position: relative;
+  margin: -15px;
+  margin-bottom: 15px;
+}
+
+.background-section .background-section-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 15px;
+}
+
+/*a simple section with text align center and margins*/
+.center-content {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.polaroid {
+  position: relative;
+  background: white;
+  padding: 15px 15px 15px 15px;
+  border: 1px solid black;
+  margin: 0 auto 20px auto;
+  max-width: 400px;
+  color: black;
+  text-transform: uppercase;
+  text-align: center;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.4em;
+  font-size: 1.4rem;
+}
+
+/*this is a div that will appear from the top to the bottom and contains a centred link with a button style */
+.scrolling-view {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 0;
+  width: 100%;
+  overflow: hidden;
+  background: rgba(158, 254, 240, 0.5);
+  transition: height 0.5s ease-in;
+}
+
+.scrolling-view.active {
+  height: 100%;
+}
+
+.scrolling-view a {
+  display: block;
+  bottom: 50%;
+  position: absolute;
+  margin: 0 auto;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border: 1px solid white;
+  padding: 4px 12px;
+  border-radius: 2px;
+  color: white;
+  text-decoration: none;
+}
+
+/*buttons styles*/
+.action-button {
+  padding: 5px 20px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  line-height: 1.8rem;
+  font-weight: 400;
+  background-repeat: no-repeat;
+  background-color: #00a5c9;
+  border-color: #00a5c9;
+  color: white;
+  margin-right: 7px;
+}
+
+.action-button.with-icon svg {
+  vertical-align: middle;
+  height: 1rem;
+  width: 1rem;
+  margin-right: 3px;
+  fill: white;
+}
+
+.action-button.secondary {
+  background-color: #fff;
+  border-color: #00a5c9;
+  color: #00a5c9;
+}
+
+.action-button.secondary.with-icon svg {
+  fill: #00a5c9;
+}
+
+.svg-icon-wrapper {
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.svg-icon-wrapper svg {
+  height: 100%;
+}
+
+.svg-icon-wrapper.star {
+  background-image: url(/src/assets/mood-stars.png);
+}
+
+.svg-icon-wrapper.star svg {
+  fill: #ffd33d;
+}
+
+/*input styles*/
+input {
+  height: 32px;
+  width: 250px;
+  border: 1px solid rgba(191, 191, 191, 0.51);
+  border-radius: 3px;
+  padding: 0 10px;
+}
+
+input.u-search-bar {
+  padding-left: 28px;
+  box-sizing: border-box;
+  background: white url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxpdmVsbG9fMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCAyOC4zIDI4LjMiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDI4LjMgMjguMzsiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+LnN0MHtmaWxsOm5vbmU7c3Ryb2tlOiM3NTc1NzU7c3Ryb2tlLXdpZHRoOjI7c3Ryb2tlLW1pdGVybGltaXQ6MTA7fS5zdDF7ZmlsbDojNzU3NTc1O308L3N0eWxlPjxjaXJjbGUgY2xhc3M9InN0MCIgY3g9IjExLjkiIGN5PSIxMS40IiByPSI4LjQiLz48cGF0aCBjbGFzcz0ic3QxIiBkPSJNMjMuMSwyNS4xbC02LTZjLTAuNy0wLjctMC43LTEuOCwwLTIuNGwwLDBjMC43LTAuNywxLjgtMC43LDIuNCwwbDYsNmMwLjcsMC43LDAuNywxLjgsMCwyLjRsMCwwQzI0LjksMjUuOCwyMy44LDI1LjgsMjMuMSwyNS4xeiIvPjwvc3ZnPg==) no-repeat left;
+  background-size: 16px;
+  background-position-x: 7px;
+}
+
+/*Here oll the components styles*/
+/*all the styles for the uTable component*/
+.u-table {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+}
+
+.u-table .u-table-row {
+  display: table-row;
+}
+
+.u-table .u-table-row .u-table-cell {
+  display: table-cell;
+  min-width: 120px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.u-table .u-table-row.u-table-body {
+  height: 70px;
+  font-weight: 400;
+}
+
+.u-table .u-table-row.u-table-body:not(:last-child) {
+  border-bottom: 0.5px solid rgba(203, 203, 203, 0.51);
+}
+
+.u-table .u-table-row.u-table-body .u-table-cell {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.u-table .u-table-row.u-table-header {
+  background-color: #fff;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  height: 40px;
+}
+
+.u-table .u-table-row.u-table-header .u-table-cell {
+  line-height: 40px;
+}
+
+.u-table-filters {
+  padding: 18px 0;
+}
+
+/*all the styles for the uCircle component*/
+.u-circle {
+  display: inline-block;
+  height: 26px;
+  width: 26px;
+  margin: 2px 6px;
+  line-height: 26px;
+  text-align: center;
+  border-radius: 50%;
+  box-sizing: border-box;
+  font-size: 0.8rem;
+  background: transparent;
+  color: #000;
+}
+
+.u-circle.active {
+  background-color: #00a5c9;
+  color: #fff;
+}
+
+.u-circle:not(.active) {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #b4b4b4;
+  line-height: 24px;
+  /*because the total size has to be equal to the active one*/
+}
+
+.u-circle[role="button"] {
+  cursor: pointer;
+}
+
+/*all the styles for the uModal component*/
+.u-modal-wrapper {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.u-modal-backdrop {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+}
+
+.u-modal {
+  float: left;
+  margin: auto;
+  height: 80%;
+  width: 80%;
+  background: #fff;
+  border-radius: 2px;
+}
+
+.u-modal-header {
+  height: 65px;
+  box-sizing: border-box;
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 24.375px 1rem 8.125px 1rem;
+  background-color: #fff;
+  position: relative;
+  z-index: 2;
+}
+
+.u-modal-body {
+  padding: 65px 15px 15px 15px;
+  height: 100%;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+.u-modal-header .close {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  border: none;
+  font-size: 1rem;
+  font-family: sans-serif;
+  height: 2rem;
+  width: 2rem;
+  color: gray;
+}
+
+/*all the styles for the uLabel component*/
+.labels-wrapper .label {
+  border: 1px solid #fec316;
+  border-radius: 0px 10px 10px 0;
+  height: 50px;
+  line-height: 25px;
+  width: 86px;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  display: inline-block;
+  text-align: right;
+  padding-right: 6px;
+  padding-left: 13px;
+  color: black;
+  background-color: #fec316;
+  font-weight: 500;
+  word-break: break-word;
+}
+
+.u-modal .labels-wrapper {
+  position: fixed;
+  top: calc(10% + 50px);
+  right: calc(10% + -71px);
+  z-index: 2;
+}
+
+.labels-wrapper .label {
+  display: block;
+  margin-bottom: 12px;
+}
+
+.tag {
+  border: 1px solid lightgray;
+  border-radius: 15px;
+  min-width: 30px;
+  display: inline-block;
+  padding: 5px 15px;
+  margin-right: 12px;
+  margin-left: 0;
+}
+
+.tag.positive {
+  background-color: #00c97e;
+  border-color: #00c97e;
+  color: #fff;
+}
+
+.tag.negative {
+  background-color: #ed4a59;
+  border-color: #ed4a59;
+  color: #fff;
+}
+
+#map {
+  height: 300px;
+  width: 100%;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+#map .olControlNoSelect, #map .olControlAttribution {
+  display: none;
+}
+
+
+/*# sourceMappingURL=styles.307d9656b956b8b90b54.css.map*/

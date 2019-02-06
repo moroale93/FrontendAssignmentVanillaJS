@@ -1,0 +1,37 @@
+nav {
+    @extend %shadowed-box;
+
+    height: $navbar-height;
+    background-color: $theme-foreground-background-color;
+    color: $theme-foreground-font-color;
+    font-size: 1.2rem;
+    font-weight: 500;
+
+    ul {
+        @extend %content-box;
+
+        height: 100%;
+
+        li {
+            height: 100%;
+            display: inline-block;
+            margin-right: 14px;
+            line-height: $navbar-height;
+            a {
+                height: 100%;
+                display: block;
+                text-decoration: none;
+                color: $theme-foreground-font-color;
+
+                span.icon {
+                    display: inline-block;
+                    height: 100%;
+                    width: $navbar-height/2;
+                    vertical-align: middle;
+                    padding: 5px 0;
+                    box-sizing: border-box;
+                }
+            }
+        }
+    }
+}

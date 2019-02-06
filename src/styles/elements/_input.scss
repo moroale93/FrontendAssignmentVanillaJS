@@ -1,0 +1,17 @@
+/*input styles*/
+
+input {
+    height: 32px;
+    width: 250px;
+    border: 1px solid $theme-medium-thin-borders-color;
+    border-radius: 3px;
+    padding: 0 10px;
+
+    &.u-search-bar {
+        padding-left: 28px;
+        box-sizing: border-box;
+        background: white url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxpdmVsbG9fMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCAyOC4zIDI4LjMiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDI4LjMgMjguMzsiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+LnN0MHtmaWxsOm5vbmU7c3Ryb2tlOiM3NTc1NzU7c3Ryb2tlLXdpZHRoOjI7c3Ryb2tlLW1pdGVybGltaXQ6MTA7fS5zdDF7ZmlsbDojNzU3NTc1O308L3N0eWxlPjxjaXJjbGUgY2xhc3M9InN0MCIgY3g9IjExLjkiIGN5PSIxMS40IiByPSI4LjQiLz48cGF0aCBjbGFzcz0ic3QxIiBkPSJNMjMuMSwyNS4xbC02LTZjLTAuNy0wLjctMC43LTEuOCwwLTIuNGwwLDBjMC43LTAuNywxLjgtMC43LDIuNCwwbDYsNmMwLjcsMC43LDAuNywxLjgsMCwyLjRsMCwwQzI0LjksMjUuOCwyMy44LDI1LjgsMjMuMSwyNS4xeiIvPjwvc3ZnPg==) no-repeat left;
+        background-size: 16px;
+        background-position-x: 7px;
+    }
+}

@@ -1,0 +1,59 @@
+/*all the styles for the uModal component*/
+
+.u-modal-wrapper {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.u-modal-backdrop {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+}
+
+.u-modal {
+  @extend %full-absolute;
+
+  float: left;
+  margin: auto;
+  height: 80%;
+  width: 80%;
+  background: $theme-foreground-background-color;
+  border-radius: 2px;
+}
+
+.u-modal-header {
+  height: $modal-header-height;
+  box-sizing: border-box;
+  font-size: 2rem;
+  font-weight: 500;
+  padding: ($modal-header-height / 2)/4*3 1rem ($modal-header-height /2 )/4 1rem;
+  background-color: $theme-foreground-background-color;
+  position: relative;
+  z-index: 2;
+}
+
+.u-modal-body {
+  @extend %full-absolute;
+  padding: $modal-header-height $normal-padding $normal-padding $normal-padding;
+  height: 100%;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+.u-modal-header .close {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  border: none;
+  font-size: 1rem;
+  font-family: sans-serif;
+  height: 2rem;
+  width: 2rem;
+  color: gray;
+}

@@ -1,0 +1,30 @@
+/*here all the font faces*/
+
+@font-face {
+    font-family: "MiloWeb";
+    src: url("/src/styles/fonts/MiloWeb.woff") format('woff');
+}
+
+@font-face {
+    font-family: "MiloWeb";
+    src: url("/src/styles/fonts/MiloWeb-Medium.woff") format('woff');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "MiloWeb";
+    src: url("/src/styles/fonts/MiloWeb.woff") format('woff');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "MiloWeb";
+    src: url("/src/styles/fonts/MiloWeb-Light.woff") format('woff');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "MiloWeb";
+    src: url("/src/styles/fonts/MiloWeb-Extralight.woff") format('woff');
+    font-weight: 200;
+}

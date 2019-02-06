@@ -1,0 +1,21 @@
+/*here all the style extensions to inherits*/
+
+%shadowed-box {
+  -webkit-box-shadow: 0 1px 2px $theme-shadows-color;
+  -moz-box-shadow: 0 1px 2px $theme-shadows-color;
+  box-shadow: 0 1px 2px $theme-shadows-color;
+}
+
+%content-box {
+  width: 85%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+%full-absolute {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}

@@ -1,0 +1,23 @@
+/*here utility classes*/
+
+.to-left {
+  float: left;
+  margin-right: 10px;
+}
+
+.to-right {
+  float: right;
+  margin-left: 10px;
+}
+
+.clear-float {
+  clear: both;
+}
+
+.secondary-text {
+  margin-top: 5px;
+}
+
+.clickable {
+  cursor: pointer;
+}

@@ -1,0 +1,54 @@
+/*all the styles for the uTable component*/
+
+$header-row-height: 40px;
+$body-row-height: 70px;
+
+.u-table {
+  @extend %shadowed-box;
+
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+  background-color: $theme-foreground-background-color;
+
+  .u-table-row {
+    display: table-row;
+
+    .u-table-cell {
+      display: table-cell;
+      min-width: 120px;
+      padding-left: $normal-padding;
+      padding-right: $normal-padding;
+    }
+
+    &.u-table-body {
+      height: $body-row-height;
+      font-weight: 400;
+
+      &:not(:last-child) {
+        border-bottom: $thin-border-size solid $theme-thin-borders-color;
+      }
+
+      .u-table-cell {
+        padding-top: $normal-padding;
+        padding-bottom: $normal-padding;
+      }
+    }
+
+    &.u-table-header {
+      background-color: $theme-foreground-background-color;
+      font-weight: 500;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+      height: $header-row-height;
+
+      .u-table-cell {
+        line-height: $header-row-height;
+      }
+    }
+  }
+}
+
+.u-table-filters {
+  padding: 18px 0;
+}

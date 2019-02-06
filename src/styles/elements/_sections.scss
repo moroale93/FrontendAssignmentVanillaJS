@@ -1,0 +1,73 @@
+/*here the sections styles*/
+
+
+/*a section with the upper border rounded and backgrounded with the primary color*/
+.section-primary {
+  position: relative;
+  z-index: 1;
+  padding: 35px 15px;
+  transform: skewY(2deg);
+  background-color: $primary-color;
+  border-top-right-radius: 24px;
+  color: white;
+  margin: 48px -15px 0 -15px;
+
+  /*with a dark color*/
+  &.dark {
+    background-color: $dark-color;
+    &:before {
+      background-color: $dark-color;
+    }
+  }
+
+  /*the rectangle that will colorize the corner*/
+  &:before {
+    height: 24px;
+    width: 24px;
+    background-color: $primary-color;
+    position: absolute;
+    top: -23px;
+    left: 0;
+    content: '';
+    z-index: -2;
+  }
+
+  /*the circle to make the corner effect, This will hide the rectangle*/
+  &:after {
+    border-radius: 50%;
+    height: 48px;
+    width: 48px;
+    background-color: white;
+    position: absolute;
+    top: -48px;
+    left: 0;
+    content: '';
+    z-index: -1;
+  }
+}
+
+/*this one will correct the positive skew of the primary section*/
+.section-content {
+  transform: skewY(-2deg);
+}
+
+/*this section will be putted over the primary section*/
+.background-section {
+  position: relative;
+  margin: -15px;
+  margin-bottom: 15px;
+
+  .background-section-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 15px;
+  }
+}
+
+/*a simple section with text align center and margins*/
+.center-content {
+  text-align: center;
+  margin: 50px 0;
+}

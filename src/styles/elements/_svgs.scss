@@ -1,0 +1,19 @@
+.svg-icon-wrapper {
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
+
+  svg {
+    height: 100%;
+  }
+
+  &.star {
+    background-image: url(/src/assets/mood-stars.png);
+    svg {
+      fill: #ffd33d;
+    }
+  }
+}
