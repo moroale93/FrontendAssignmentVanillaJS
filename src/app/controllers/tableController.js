@@ -49,7 +49,10 @@ function TableController() {
                 }
             }, {
                 title: "Device",
-                field: "computed_browser.Platform"
+                getCustomTemplate: function (rowData) {
+                    var pratformType = rowData.screen.width < rowData.screen.height ? "Mobile" : "Desktop";
+                    return document.createTextNode(pratformType);
+                }
             }, {
                 title: "Platform",
                 field: "computed_browser.Platform"

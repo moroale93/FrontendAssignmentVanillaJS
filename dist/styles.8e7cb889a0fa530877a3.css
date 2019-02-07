@@ -844,6 +844,11 @@ input.u-search-bar {
   color: #fff;
 }
 
+canvas#ratingChart {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 #map {
   height: 300px;
   width: 100%;
@@ -856,4 +861,4 @@ input.u-search-bar {
 }
 
 
-/*# sourceMappingURL=styles.e539a280d40336e83c0e.css.map*/
+/*# sourceMappingURL=styles.8e7cb889a0fa530877a3.css.map*/
