@@ -57,3 +57,11 @@ npm run start-dev
 ```
 
 This one will run tests, will build the project and in the end will serve to you.
+
+## API used
+
+In this project I used:
+
+* [ChartJS](https://www.chartjs.org) for the charts.
+* [The cat api](https://thecatapi.com/) to get a random set of images because all the images in the json aren't reachable.
+* [Open layer](https://openlayers.org) to show the map on the detail.

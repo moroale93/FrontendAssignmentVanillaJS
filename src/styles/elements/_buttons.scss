@@ -1,6 +1,8 @@
 /*buttons styles*/
 
 .action-button {
+  @extend %heart-beat-border-animation;
+
   padding: 5px 20px;
   border-width: 1px;
   border-style: solid;

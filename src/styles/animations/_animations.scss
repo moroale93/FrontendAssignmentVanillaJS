@@ -32,3 +32,51 @@
     right: 0;
   }
 }
+
+%heart-beat-border-animation{
+  position: relative;
+  &:hover:before{
+
+    border-width: 0px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 50%;
+    box-sizing: border-box;
+    content: "";
+    height: 100%;
+    width: 100%;
+    transform:scale(1);
+    left: 0;
+    position: absolute;
+    top: 0;
+    bottom:0;
+    right:0;
+    animation-name: heart-beat-border;
+    animation-duration: 0.5s;
+    -webkit-animation-name: heart-beat-border;
+    -webkit-animation-duration: 0.5s;
+  }
+  &:not(.active):hover:before{
+    border-color: $theme-borders-color;
+  }
+  &.secondary:hover:before{
+    border-color: $theme-primary-background-color;
+    border-radius: 2px;
+  }
+}
+
+@-webkit-keyframes heart-beat-border {
+  0% {border-width: 1px;}
+  25% {transform:scale(0.9);}
+  50% {transform:scale(1);}
+  75% {transform:scale(0.9);}
+  100% {border-width: 1px;transform:scale(1);}
+}
+
+
+@keyframes heart-beat-border {
+  25% {border-width: 1px;transform:scale(0.9);}
+  50% {transform:scale(1);}
+  75% {transform:scale(0.9);}
+  100% {border-width: 1px;transform:scale(1);}
+}

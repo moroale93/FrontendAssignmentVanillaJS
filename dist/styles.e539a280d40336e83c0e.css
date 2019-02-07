@@ -214,6 +214,76 @@ p {
   right: 0;
 }
 
+.action-button, .u-circle[role="button"] {
+  position: relative;
+}
+
+.action-button:hover:before, .u-circle[role="button"]:hover:before {
+  border-width: 0px;
+  border-style: solid;
+  border-color: white;
+  border-radius: 50%;
+  box-sizing: border-box;
+  content: "";
+  height: 100%;
+  width: 100%;
+  transform: scale(1);
+  left: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  animation-name: heart-beat-border;
+  animation-duration: 0.5s;
+  -webkit-animation-name: heart-beat-border;
+  -webkit-animation-duration: 0.5s;
+}
+
+.action-button:not(.active):hover:before, .u-circle[role="button"]:not(.active):hover:before {
+  border-color: #b4b4b4;
+}
+
+.secondary.action-button:hover:before, .secondary.u-circle[role="button"]:hover:before {
+  border-color: #00a5c9;
+  border-radius: 2px;
+}
+
+@-webkit-keyframes heart-beat-border {
+  0% {
+    border-width: 1px;
+  }
+  25% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(0.9);
+  }
+  100% {
+    border-width: 1px;
+    transform: scale(1);
+  }
+}
+
+@keyframes heart-beat-border {
+  25% {
+    border-width: 1px;
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(0.9);
+  }
+  100% {
+    border-width: 1px;
+    transform: scale(1);
+  }
+}
+
 /*here all the layout styles*/
 /* here all the base layout's styles*/
 html {
@@ -340,6 +410,7 @@ nav ul li a span.icon {
 
 .section-primary.dark {
   background-color: #2a484f;
+  margin-bottom: 40px;
 }
 
 .section-primary.dark:before {
@@ -785,4 +856,4 @@ input.u-search-bar {
 }
 
 
-/*# sourceMappingURL=styles.4545fbb7285e40866d67.css.map*/
+/*# sourceMappingURL=styles.e539a280d40336e83c0e.css.map*/

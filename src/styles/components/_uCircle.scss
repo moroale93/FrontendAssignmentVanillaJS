@@ -29,6 +29,7 @@ $circle-margins: 2px 6px;
     }
 
     &[role="button"] {
+        @extend %heart-beat-border-animation;
         cursor: pointer;
     }
 }
