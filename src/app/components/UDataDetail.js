@@ -132,7 +132,7 @@ function UDataDetail(commentData) {
                 var scrollView = DomElementUtil.createElement("div", {"class": "scrolling-view"}, DomElementUtil.createElement("a", {
                     "target": "_blank",
                     "href": commentData.images[imageKey].url
-                }, document.createTextNode("view")));
+                }, DomElementUtil.createElement("span", null, document.createTextNode("view"))));
                 cell.appendChild(scrollView);
                 cell.addEventListener("mouseover", function () {
                     scrollView.setAttribute("class", scrollView.getAttribute("class").replace(/\sactive/, "") + " active")

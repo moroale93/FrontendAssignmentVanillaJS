@@ -25,6 +25,12 @@
   width: 80%;
   background: $theme-foreground-background-color;
   border-radius: 2px;
+  transition: height 0.3s ease-in;
+
+  &.closed {
+    overflow: hidden;
+    height: 0;
+  }
 }
 
 .u-modal-header {

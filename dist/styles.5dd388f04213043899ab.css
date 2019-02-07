@@ -182,6 +182,38 @@ p {
   cursor: pointer;
 }
 
+/*here the reusable animations*/
+/*this will show and hide a double arrow on the right. The element must contain a span*/
+.scrolling-view a {
+  padding: 20px;
+  transition: all 0.5s;
+}
+
+.scrolling-view a span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.scrolling-view a span:after {
+  content: '\BB';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.scrolling-view a:hover span {
+  padding-right: 25px;
+}
+
+.scrolling-view a:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
 /*here all the layout styles*/
 /* here all the base layout's styles*/
 html {
@@ -388,7 +420,7 @@ nav ul li a span.icon {
   height: 0;
   width: 100%;
   overflow: hidden;
-  background: rgba(158, 254, 240, 0.5);
+  background: rgba(255, 255, 255, 0.5);
   transition: height 0.5s ease-in;
 }
 
@@ -403,10 +435,11 @@ nav ul li a span.icon {
   margin: 0 auto;
   left: 50%;
   transform: translate(-50%, 0);
-  border: 1px solid white;
+  border: 1px solid gray;
+  background-color: white;
   padding: 4px 12px;
   border-radius: 2px;
-  color: white;
+  color: black;
   text-decoration: none;
 }
 
@@ -617,6 +650,12 @@ input.u-search-bar {
   width: 80%;
   background: #fff;
   border-radius: 2px;
+  transition: height 0.3s ease-in;
+}
+
+.u-modal.closed {
+  overflow: hidden;
+  height: 0;
 }
 
 .u-modal-header {
@@ -680,7 +719,7 @@ input.u-search-bar {
 
 .u-modal .labels-wrapper {
   position: fixed;
-  top: calc(10% + 50px);
+  top: 50%;
   right: calc(10% + -71px);
   z-index: 2;
 }
@@ -735,4 +774,4 @@ input.u-search-bar {
 }
 
 
-/*# sourceMappingURL=styles.1e1b493fd7702b531fe1.css.map*/
+/*# sourceMappingURL=styles.5dd388f04213043899ab.css.map*/

@@ -1,6 +1,5 @@
 /*all the styles for the uLabel component*/
 
-$top-label-wrapper: $modal-header-height - $normal-padding;
 $right-label-wrapper: $normal-padding - $label-width;
 
 .labels-wrapper {
@@ -25,7 +24,7 @@ $right-label-wrapper: $normal-padding - $label-width;
 
 .u-modal .labels-wrapper {
   position: fixed;
-  top: calc(10% + #{$top-label-wrapper});
+  top: 50%;
   right: calc(10% + #{$right-label-wrapper});
   z-index: 2;
 }
