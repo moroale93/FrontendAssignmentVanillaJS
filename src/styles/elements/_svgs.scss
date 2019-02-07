@@ -12,8 +12,8 @@
 
   &.star {
     background-image: url(/src/assets/mood-stars.png);
-    svg {
-      fill: #ffd33d;
+    &:not(.active){
+      background-position-x: right;
     }
   }
 }

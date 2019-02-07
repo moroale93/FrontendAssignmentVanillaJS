@@ -438,7 +438,7 @@ nav ul li a span.icon {
   border: 1px solid gray;
   background-color: white;
   padding: 4px 12px;
-  border-radius: 2px;
+  border-radius: 3px;
   color: black;
   text-decoration: none;
 }
@@ -479,6 +479,17 @@ nav ul li a span.icon {
   fill: #00a5c9;
 }
 
+.icon-button {
+  display: inline-block;
+  height: auto;
+  width: 29px;
+  margin-left: 12px;
+}
+
+.icon-button svg {
+  fill: #00a5c9;
+}
+
 .svg-icon-wrapper {
   height: 30px;
   width: 30px;
@@ -496,8 +507,8 @@ nav ul li a span.icon {
   background-image: url(/src/assets/mood-stars.png);
 }
 
-.svg-icon-wrapper.star svg {
-  fill: #ffd33d;
+.svg-icon-wrapper.star:not(.active) {
+  background-position-x: right;
 }
 
 /*input styles*/
@@ -704,7 +715,7 @@ input.u-search-bar {
   border-radius: 0px 10px 10px 0;
   height: 50px;
   line-height: 25px;
-  width: 86px;
+  width: 73px;
   text-transform: uppercase;
   box-sizing: border-box;
   display: inline-block;
@@ -720,7 +731,7 @@ input.u-search-bar {
 .u-modal .labels-wrapper {
   position: fixed;
   top: 50%;
-  right: calc(10% + -71px);
+  right: calc(10% - 73px);
   z-index: 2;
 }
 
@@ -774,4 +785,4 @@ input.u-search-bar {
 }
 
 
-/*# sourceMappingURL=styles.5dd388f04213043899ab.css.map*/
+/*# sourceMappingURL=styles.4545fbb7285e40866d67.css.map*/

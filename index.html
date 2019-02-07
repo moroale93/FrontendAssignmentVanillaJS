@@ -42,118 +42,12 @@
         <div class="u-table-filters">
             <div class="u-search-bar-wrapper to-left"></div>
             <div class="u-ratings-wrapper to-left"></div>
+            <div class="u-action-buttons-wrapper to-right"></div>
             <div class="clear-float"></div>
         </div>
         <div class="u-table-wrapper"></div>
     </div>
 </main>
-
-<template id="comment-detail">
-    <div class="labels-wrapper">
-        <div class="label">bug</div>
-        <div class="label">question</div>
-    </div>
-
-    <div>
-        <div class="tag positive to-right">tag 1</div>
-        <div class="tag negative to-right">tag 2</div>
-    </div>
-
-    <div class="section-primary">
-        <div class="section-content">
-            <h3>custom subject 17/1/1970</h3>
-            <p>Commento commento commento commento commento commento commento commento commento commento commento
-                commento
-                commento commento commento commento commento commento commento commento commento commento commento</p>
-            <a class="action-button with-icon secondary to-right" href="https://usabilla.com" target="_blank">
-                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path
-                        d="M14 4h-13v18h20v-11h1v12h-22v-20h14v1zm10 5h-1v-6.293l-11.646 11.647-.708-.708 11.647-11.646h-6.293v-1h8v8z"/>
-                </svg>
-                Go to the site
-            </a>
-            <a class="action-button with-icon to-right" href="mailto:moro.ale.93@gmail.com">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 21h-24v-18h24v18zm-23-16.477v15.477h22v-15.477l-10.999 10-11.001-10zm21.089-.523h-20.176l10.088 9.171 10.088-9.171z"/></svg>
-                Contact the user
-            </a>
-            <div class="clear-float"></div>
-
-        </div>
-    </div>
-
-
-    <div class="background-section">
-        <div id="map"></div>
-        <div class="background-section-content">
-            <h3>Location</h3>
-            <div class="center-content">
-                <h1>Amsterdam</h1>
-                <img src="https://countryflags.io/NL/flat/64.png"/>
-            </div>
-        </div>
-    </div>
-
-    <div>
-        <h3>Browser & device info</h3>
-        <div class="center-content">
-            <h1>Google Chrome</h1>
-            <h2>for MacOSX</h2>
-            <h4>Version 32.0</h4>
-            <h5>900x1440</h5>
-        </div>
-    </div>
-
-    <div class="section-primary dark">
-        <div class="section-content">
-
-            <h3>Images</h3>
-            <div class="image-grid">
-                <div class="image-grid-row">
-                    <div class="image-grid-column">
-                        <div class="polaroid">
-                            <img src="https://cdn2.thecatapi.com/images/9c.gif">
-                            <div class="polaroid-title">Cropped</div>
-                            <div class="polaroid-subtitle">48x48</div>
-                        </div>
-                        <div class="polaroid">
-                            <img src="https://cdn2.thecatapi.com/images/g7.jpg">
-                            <div class="polaroid-title">Screenshot</div>
-                            <div class="polaroid-subtitle">228x148</div>
-                        </div>
-                    </div>
-                    <div class="image-grid-column">
-                        <div class="polaroid">
-                            <img src="https://cdn2.thecatapi.com/images/405.jpg">
-                            <div class="polaroid-title">Screenshot</div>
-                            <div class="polaroid-subtitle">228x148</div>
-                        </div>
-                        <div class="polaroid">
-                            <img src="https://cdn2.thecatapi.com/images/3hn.jpg">
-                            <div class="polaroid-title">Screenshot</div>
-                            <div class="polaroid-subtitle">228x148</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <script>
-        var map = new OpenLayers.Map("map");
-        map.addLayer(new OpenLayers.Layer.OSM());
-        // create layer switcher widget in top right corner of map.
-        var layer_switcher = new OpenLayers.Control.LayerSwitcher({});
-        map.addControl(layer_switcher);
-        //Set start centrepoint and zoom
-        var lonLat = new OpenLayers.LonLat(4.9167, 52.35)
-            .transform(
-                new OpenLayers.Projection("EPSG:4326"), // transform from WGS 1984
-                map.getProjectionObject() // to Spherical Mercator Projection
-            );
-        var zoom = 15;
-        map.setCenter(lonLat, zoom);
-    </script>
-
 
 </template>
 <script src="http://www.openlayers.org/api/OpenLayers.js"></script>

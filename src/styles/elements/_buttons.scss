@@ -35,3 +35,14 @@
     }
   }
 }
+
+.icon-button {
+  display: inline-block;
+  height: auto;
+  width: 29px;
+  margin-left: 12px;
+
+  svg {
+    fill: $theme-primary-background-color;
+  }
+}
