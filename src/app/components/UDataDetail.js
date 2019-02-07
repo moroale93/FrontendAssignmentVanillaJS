@@ -41,6 +41,7 @@ function UDataDetail(commentData) {
             var isPositive = ["attractive", "usable", "interesting"].indexOf(tag) !== -1;
             ret.appendChild(DomElementUtil.createElement("div", {"class": "tag to-right" + (isPositive ? " positive" : " negative")}, document.createTextNode(tag)));
         });
+        ret.appendChild(DomElementUtil.createElement("div", {"class": "clear-float"}));
         return ret;
     }
 

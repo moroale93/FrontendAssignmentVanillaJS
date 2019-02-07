@@ -35,3 +35,10 @@ nav {
         }
     }
 }
+
+//the mobile responsible style
+@media screen and (max-width: 800px) {
+    nav ul {
+        width: 95%;
+    }
+}

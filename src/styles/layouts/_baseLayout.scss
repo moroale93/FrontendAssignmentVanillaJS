@@ -25,3 +25,11 @@ main {
 .content {
     @extend %content-box;
 }
+
+//the mobile responsible style
+@media screen and (max-width: 800px) {
+    .content {
+        width: 95%;
+    }
+}
+

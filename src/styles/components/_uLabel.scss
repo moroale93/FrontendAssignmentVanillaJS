@@ -34,3 +34,16 @@ $right-label-wrapper: $normal-padding - $label-width;
   display: block;
   margin-bottom: 12px;
 }
+
+//the mobile responsible style
+@media screen and (max-width: 800px) {
+  .labels-wrapper .label {
+    display: inline-block;
+  }
+
+  .u-modal .labels-wrapper {
+    position: initial;
+    margin-top: 30px;
+    margin-bottom: 60px;
+  }
+}

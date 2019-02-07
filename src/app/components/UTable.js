@@ -55,6 +55,7 @@ function UTable(element, tableOptions) {
                     child = document.createTextNode(ObjectUtil.getValue(data, column.field));
                 }
                 var cellContentWrapperElement = DomElementUtil.createElement("div", {class: "u-table-cell-content-wrapper"});
+                cellContentWrapperElement.appendChild(DomElementUtil.createElement("div", {class: "u-table-cell-label"}, document.createTextNode(column.title)));
                 cellContentWrapperElement.appendChild(child);
                 columnElement.appendChild(cellContentWrapperElement);
                 row.appendChild(columnElement);

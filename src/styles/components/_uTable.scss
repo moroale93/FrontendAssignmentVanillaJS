@@ -49,6 +49,36 @@ $body-row-height: 70px;
   }
 }
 
+.u-table-cell-label {
+  font-weight: 500;
+  display: none;
+}
+
 .u-table-filters {
   padding: 18px 0;
+}
+
+
+//the mobile responsible style
+@media screen and (max-width: 800px) {
+  .u-table {
+    text-align: center;
+    display: block;
+    .u-table-row {
+      display: block;
+
+      &.u-table-body {
+        height: auto;
+      }
+      &.u-table-header {
+        display: none;
+      }
+      .u-table-cell {
+        display: block;
+      }
+    }
+  }
+  .u-table-cell-label {
+    display: block;
+  }
 }

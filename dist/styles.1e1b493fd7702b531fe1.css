@@ -206,6 +206,12 @@ main {
   margin-bottom: 40px;
 }
 
+@media screen and (max-width: 800px) {
+  .content {
+    width: 95%;
+  }
+}
+
 nav {
   height: 47px;
   background-color: #fff;
@@ -239,6 +245,12 @@ nav ul li a span.icon {
   vertical-align: middle;
   padding: 5px 0;
   box-sizing: border-box;
+}
+
+@media screen and (max-width: 800px) {
+  nav ul {
+    width: 95%;
+  }
 }
 
 /*here the style of image grid*/
@@ -518,8 +530,35 @@ input.u-search-bar {
   line-height: 40px;
 }
 
+.u-table-cell-label {
+  font-weight: 500;
+  display: none;
+}
+
 .u-table-filters {
   padding: 18px 0;
+}
+
+@media screen and (max-width: 800px) {
+  .u-table {
+    text-align: center;
+    display: block;
+  }
+  .u-table .u-table-row {
+    display: block;
+  }
+  .u-table .u-table-row.u-table-body {
+    height: auto;
+  }
+  .u-table .u-table-row.u-table-header {
+    display: none;
+  }
+  .u-table .u-table-row .u-table-cell {
+    display: block;
+  }
+  .u-table-cell-label {
+    display: block;
+  }
 }
 
 /*all the styles for the uCircle component*/
@@ -610,6 +649,16 @@ input.u-search-bar {
   color: gray;
 }
 
+@media screen and (max-width: 800px) {
+  .u-modal {
+    height: 95%;
+    width: 95%;
+  }
+  .u-modal .u-modal-header {
+    font-size: 1.5rem;
+  }
+}
+
 /*all the styles for the uLabel component*/
 .labels-wrapper .label {
   border: 1px solid #fec316;
@@ -639,6 +688,17 @@ input.u-search-bar {
 .labels-wrapper .label {
   display: block;
   margin-bottom: 12px;
+}
+
+@media screen and (max-width: 800px) {
+  .labels-wrapper .label {
+    display: inline-block;
+  }
+  .u-modal .labels-wrapper {
+    position: initial;
+    margin-top: 30px;
+    margin-bottom: 60px;
+  }
 }
 
 .tag {
@@ -675,4 +735,4 @@ input.u-search-bar {
 }
 
 
-/*# sourceMappingURL=styles.307d9656b956b8b90b54.css.map*/
+/*# sourceMappingURL=styles.1e1b493fd7702b531fe1.css.map*/

@@ -57,3 +57,14 @@
   width: 2rem;
   color: gray;
 }
+
+//the mobile responsible style
+@media screen and (max-width: 800px) {
+  .u-modal {
+    height: 95%;
+    width: 95%;
+    .u-modal-header {
+      font-size: 1.5rem;
+    }
+  }
+}
