@@ -1,1 +1,15 @@
-@import "map";
+canvas#ratingChart {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#map {
+  height: 300px;
+  width: 100%;
+  opacity: 0.5;
+  pointer-events: none;
+
+  .olControlNoSelect, .olControlAttribution {
+    display: none;
+  }
+}
